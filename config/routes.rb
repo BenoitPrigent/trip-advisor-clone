@@ -4,6 +4,9 @@ Rails.application.routes.draw do
       # / restaurants/...
       get 'top', to: 'restaurants#top'
     end
+    member do
+      get 'chef', to: 'restaurants#chef'
+    end
   end
 
 
